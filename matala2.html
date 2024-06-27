@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>matala 2</h1>
+
+  <script>
+    // Function Declaration
+    function showMessage() {
+      alert("Hello, world!");
+    }
+
+    // Function Expression
+    const sum = function (a, b) {
+      return a + b;
+    };
+
+    // Arrow Function
+    const multiply = (a, b) => a * b;
+
+    // Nested Functions
+    function outerFunction(a) {
+      function innerFunction(b) {
+        return a + b;
+      }
+      return innerFunction;
+    }
+
+    // Calling functions
+    showMessage(); // Calls the function to show an alert
+    console.log(sum(5, 10)); // Output: 15
+    console.log(multiply(5, 10)); // Output: 50
+    const addFive = outerFunction(5);
+    console.log(addFive(10)); // Output: 15
+  </script>
+</body>
+
+</html>

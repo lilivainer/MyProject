@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Book</title>
+  <link rel="stylesheet" href="liliAndlidor.css">
+</head>
+
+<body>
+  <header>
+    <h1>Contact Book</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contacts">
+      <h2>Contact List</h2>
+      <button id="addContactBtn">Add Contact</button>
+      <button id="clearContactsBtn">Clear All Contacts</button>
+      <ul id="contactList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Contact Book. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle">Add Contact</h2>
+      <form id="contactForm">
+        <input type="hidden" id="contactId">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="liliAndlidor.js"></script>
+</body>
+
+</html>
